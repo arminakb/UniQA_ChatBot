@@ -1,3 +1,5 @@
+<img width="1672" height="941" alt="ChatGPT Image Jun 23, 2026, 03_05_15 PM" src="https://github.com/user-attachments/assets/3066ce75-6306-49f7-893c-467f5fd8ff00" />
+
 # IAU QA Chatbot
 
 LLM-powered question-answering chatbot for Islamic Azad University, Sari Branch academic regulations. The project ingests Persian regulation documents, builds an Obsidian-compatible knowledge wiki, retrieves relevant pages, and serves answers through a FastAPI web interface.

@@ -165,8 +165,7 @@ Main endpoints:
 
 ```
 
-
-https://github.com/user-attachments/assets/07ef4c08-a3ea-4634-8bb3-576f4cadda02
+![Demo](./assets/demo.gif)
 
 
 ```

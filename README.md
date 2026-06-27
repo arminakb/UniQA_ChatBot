@@ -163,9 +163,7 @@ Main endpoints:
 
 ## Screenshots
 
-```
 <img width="873" height="409" alt="demo (1)" src="https://github.com/user-attachments/assets/22d49e4c-70dc-4fec-beb9-6f29ea1c822a" />
-```
 
 ## Development
 

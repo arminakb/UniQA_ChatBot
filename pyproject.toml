@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iau-qa-chatbot"
+version = "1.0.0"
+description = "LLM-Wiki based QA chatbot for IAU Sari academic regulations."
+requires-python = ">=3.11"
+dependencies = [
+  "loguru>=0.7",
+]
+
+[project.optional-dependencies]
+pdf = [
+  "pdfplumber>=0.11",
+  "pymupdf>=1.24",
+]
+agent = [
+  "langgraph>=0.2",
+]
+api = [
+  "fastapi>=0.115",
+  "pydantic>=2.7",
+  "uvicorn>=0.30",
+]
+retrieval = [
+  "chromadb>=0.5",
+  "sentence-transformers>=3.0",
+]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+  "black>=24.0",
+  "fastapi>=0.115",
+  "pydantic>=2.7",
+  "uvicorn>=0.30",
+]
+all = [
+  "iau-qa-chatbot[pdf,agent,api,retrieval]",
+]
+
+[tool.setuptools.packages.find]
+include = ["iau_chatbot*"]
+
+[tool.setuptools.package-data]
+"iau_chatbot.api" = ["static/*.png"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+extend-exclude = '''
+/(
+  obsidian-wiki-main
+  | \.git-store
+  | \.venv
+  | \.agents
+  | \.codex
+  | \.sentry-native
+  | \.pytest_cache
+  | \.ruff_cache
+  | iau_qa_chatbot\.egg-info
+)/
+'''
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [
+  "obsidian-wiki-main",
+  ".git-store",
+  ".venv",
+  ".agents",
+  ".codex",
+  ".sentry-native",
+  ".pytest_cache",
+  ".ruff_cache",
+  "iau_qa_chatbot.egg-info",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

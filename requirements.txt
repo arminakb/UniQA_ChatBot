@@ -1,0 +1,9 @@
+loguru>=0.7
+pdfplumber>=0.11
+pymupdf>=1.24
+langgraph>=0.2
+fastapi>=0.115
+pydantic>=2.7
+uvicorn>=0.30
+chromadb>=0.5
+sentence-transformers>=3.0

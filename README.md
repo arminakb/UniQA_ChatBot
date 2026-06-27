@@ -166,7 +166,7 @@ Main endpoints:
 ```
 
 
-https://github.com/user-attachments/assets/d610d8ba-ba9e-4702-a6ca-02843162031c
+https://github.com/user-attachments/assets/07ef4c08-a3ea-4634-8bb3-576f4cadda02
 
 
 ```

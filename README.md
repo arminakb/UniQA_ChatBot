@@ -163,10 +163,12 @@ Main endpoints:
 
 ## Screenshots
 
-Add screenshots or demo GIFs here after deployment:
+```
 
-```text
-docs/screenshots/
+
+https://github.com/user-attachments/assets/d610d8ba-ba9e-4702-a6ca-02843162031c
+
+
 ```
 
 ## Development
